@@ -1,0 +1,16 @@
+{
+  "name": "seyik-website",
+  "version": "1.0.0",
+  "description": "Skill & Equip Youth Initiative for Karamoja – official website",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve --port=8080",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

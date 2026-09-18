@@ -1,0 +1,69 @@
+# Decap CMS configuration for SEYIK
+# Client logs in and can write articles + upload images/videos
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Local backend for testing on your computer (optional)
+local_backend: true
+
+# Where uploaded images & videos are stored
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Optional: limit media types
+# media_library:
+#   max_file_size: 10000000   # 10 MB
+
+site_url: https://seyik.org
+display_url: https://seyik.org
+logo_url: /seyik-logo.png
+
+# Collections = what the client can create/edit
+collections:
+  # ========== ARTICLES / BLOG ==========
+  - name: "blog"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: true }
+      - { label: "Author", name: "author", widget: "string", default: "SEYIK" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false, hint: "Short description shown on the blog list" }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          required: false,
+          field: { label: "Tag", name: "tag", widget: "string" }
+        }
+
+  # ========== SIMPLE PAGES (optional editable content) ==========
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - name: "homepage"
+        label: "Homepage Text"
+        file: "content/pages/homepage.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
+          - { label: "Primary Button Text", name: "hero_btn_primary", widget: "string" }
+          - { label: "Secondary Button Text", name: "hero_btn_secondary", widget: "string" }
+
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Mission", name: "mission", widget: "text" }
+          - { label: "Vision", name: "vision", widget: "text" }
