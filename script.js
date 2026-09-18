@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('message').value.trim();
 
       const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-      const mailto = `mailto:s.equipyouth24@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      const mailto = `mailto:info.seyik@24.org?subject=${encodeURIComponent(subject)}&body=${body}`;
       window.location.href = mailto;
     });
   }

@@ -16,8 +16,8 @@ public_folder: "/images/uploads"
 # media_library:
 #   max_file_size: 10000000   # 10 MB
 
-site_url: https://seyik.org
-display_url: https://seyik.org
+site_url: https://seyik.netlify.app
+display_url: https://seyik.netlify.app
 logo_url: /seyik-logo.png
 
 # Collections = what the client can create/edit
