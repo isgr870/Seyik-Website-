@@ -84,7 +84,7 @@ No coding. No FTP. No developer needed for normal content updates.
 
 ### E. Contact form notifications
 1. Netlify → Forms → after first test submit, form appears
-2. Set notification email to `info.seyik@24.org`
+2. Set notification email to `info.seyik.org@gmail.com`
 
 ---
 

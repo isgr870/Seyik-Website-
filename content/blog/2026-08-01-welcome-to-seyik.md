@@ -19,6 +19,6 @@ This website is a space where we will share:
 - Climate action and advocacy work
 - Opportunities to get involved
 
-Stay connected with us on X ([@Skill_Youth_kja](https://x.com/Skill_Youth_kja)) and reach out anytime at **info.seyik@24.org**.
+Stay connected with us on X ([@Skill_Youth_kja](https://x.com/Skill_Youth_kja)) and reach out anytime at **info.seyik.org@gmail.com**.
 
 **Skilled Youth, Empowered Communities.**
