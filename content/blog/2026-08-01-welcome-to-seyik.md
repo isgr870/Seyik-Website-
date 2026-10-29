@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: Welcome to SEYIK – "Skilled Youth, Empowered Communities"
+title: Welcome to SEYIK  "Skilled Youth, Empowered Communities"
 date: 2026-08-01T10:00:00.000Z
 author: SEYIK
 thumbnail: /seyik-logo.png
