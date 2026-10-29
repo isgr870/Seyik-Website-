@@ -10,7 +10,7 @@ tags:
   - Announcement
   - Youth
 ---
-We are **Skill & Equip Youth Initiative for Karamoja (SEYIK)** — a youth-led organisation working to skill and equip young people for inclusive economic growth while tackling climate change in the Karamoja Sub-Region.
+We are **Skill & Equip Youth Initiative for Karamoja (SEYIK),** a youth-led organisation working to skill and equip young people for inclusive economic growth while tackling climate change in the Karamoja Sub-Region.
 
 This website is a space where we will share:
 
