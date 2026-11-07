@@ -897,3 +897,49 @@ ul {
   border-radius: 8px;
   margin: 1.5rem 0;
 }
+
+/* ========== SEYIK professional spacing (auto-added) ========== */
+.vision-mission-grid,
+.cards-grid,
+.two-col,
+.grid-2,
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem !important;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .vision-mission-grid,
+  .cards-grid,
+  .two-col,
+  .grid-2,
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.75rem !important;
+  }
+}
+
+.cta-group,
+.button-stack,
+.action-boxes,
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem !important;
+}
+
+.card, .info-card, .cta-card, .partner-card, .box {
+  margin-bottom: 1.5rem;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+/* ========== end SEYIK spacing ========== */
