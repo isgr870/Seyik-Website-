@@ -1057,3 +1057,126 @@ section {
   margin-bottom: 3rem !important;
 }
 /* ========== end desktop fix ========== */
+
+/* =====================================================
+   SEYIK – PROPER DESKTOP + MOBILE RESPONSIVE SYSTEM
+   ===================================================== */
+
+/* Base – mobile first */
+body {
+  overflow-x: hidden;
+}
+
+.container,
+.wrapper,
+main,
+.page-content,
+.content {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* ========== DESKTOP (PC / large screens) ========== */
+@media (min-width: 900px) {
+
+  /* Make the whole site use a nice wide container */
+  .container,
+  .wrapper,
+  main,
+  .page-content,
+  .content,
+  body > div {
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  /* Force two-column layouts on desktop */
+  .vision-mission-grid,
+  .cards-grid,
+  .two-col,
+  .grid-2,
+  .row,
+  [class*="vision-mission"],
+  [class*="cards"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2.5rem !important;
+    width: 100% !important;
+  }
+
+  /* Who We Serve and similar full-width sections */
+  .who-we-serve,
+  [class*="who-we-serve"],
+  .full-width,
+  section.full {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+
+  /* Navigation – show full menu on desktop */
+  .nav-links,
+  .desktop-nav,
+  nav ul {
+    display: flex !important;
+  }
+
+  .hamburger,
+  .menu-toggle,
+  .mobile-menu-btn {
+    display: none !important;
+  }
+
+  /* Better spacing on large screens */
+  section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+/* ========== TABLET ========== */
+@media (min-width: 600px) and (max-width: 899px) {
+  .container,
+  .wrapper,
+  main {
+    max-width: 720px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+/* ========== MOBILE (keep clean) ========== */
+@media (max-width: 599px) {
+  .vision-mission-grid,
+  .cards-grid,
+  .two-col,
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .container,
+  .wrapper,
+  main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Prevent any element from breaking the layout */
+* {
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+/* ===================================================== */
