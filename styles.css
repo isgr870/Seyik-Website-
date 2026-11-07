@@ -943,3 +943,55 @@ section {
   margin-bottom: 2.5rem;
 }
 /* ========== end SEYIK spacing ========== */
+
+/* ========== FORCE CLEAN SPACING – no more overlapping boxes ========== */
+.cta-group,
+.button-stack,
+.action-boxes,
+.cta-buttons,
+.btn-group,
+.buttons,
+.stack,
+.card-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;          /* nice even space between boxes */
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Individual buttons / cards */
+.btn,
+.button,
+.cta-card,
+.info-card,
+.card,
+.box,
+a.btn,
+a.button {
+  display: block !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;     /* gap handles the spacing */
+  position: relative !important;
+  z-index: auto !important;
+}
+
+/* Extra safety for any stacked elements that still touch */
+.btn + .btn,
+.button + .button,
+.card + .card,
+.box + .box,
+a.btn + a.btn {
+  margin-top: 1.5rem !important;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .cta-group,
+  .button-stack,
+  .action-boxes,
+  .cta-buttons {
+    gap: 1.25rem !important;
+  }
+}
+/* ========== end force spacing ========== */
