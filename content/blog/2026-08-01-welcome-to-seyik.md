@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: Welcome to SEYIK – "Skilled Youth, Empowered Communities"
+title: Welcome to SEYIK  "Skilled Youth, Empowered Communities"
 date: 2026-08-01T10:00:00.000Z
 author: SEYIK
 thumbnail: /seyik-logo.png
@@ -10,7 +10,7 @@ tags:
   - Announcement
   - Youth
 ---
-We are **Skill & Equip Youth Initiative for Karamoja (SEYIK)** — a youth-led organisation working to skill and equip young people for inclusive economic growth while tackling climate change in the Karamoja Sub-Region.
+We are **Skill & Equip Youth Initiative for Karamoja (SEYIK),** a youth-led organisation working to skill and equip young people for inclusive economic growth while tackling climate change in the Karamoja Sub-Region.
 
 This website is a space where we will share:
 
