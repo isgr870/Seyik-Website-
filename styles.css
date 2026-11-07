@@ -995,3 +995,65 @@ a.btn + a.btn {
   }
 }
 /* ========== end force spacing ========== */
+
+/* ========== DESKTOP + ALIGNMENT FIX (Nov 2026) ========== */
+
+/* Force proper desktop width */
+@media (min-width: 900px) {
+  body, .container, main, .page, .content, .wrapper {
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  /* Vision & Mission side-by-side */
+  .vision-mission-grid,
+  .cards-grid,
+  .two-col,
+  .grid-2,
+  [class*="vision"],
+  [class*="mission"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+    width: 100% !important;
+  }
+
+  /* Who We Serve must be full width below the two cards */
+  .who-we-serve,
+  [class*="who-we-serve"],
+  section:has(h2:contains("Who We Serve")),
+  .serve-section {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 2.5rem !important;
+  }
+}
+
+/* Mobile stays single column */
+@media (max-width: 899px) {
+  .vision-mission-grid,
+  .cards-grid,
+  .two-col,
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* Extra safety – stop any card from overflowing or overlapping */
+.card, .info-card, .box, .cta-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Make sure sections have breathing room */
+section {
+  margin-bottom: 3rem !important;
+}
+/* ========== end desktop fix ========== */
