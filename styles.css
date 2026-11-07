@@ -1180,3 +1180,69 @@ img, video, iframe {
   height: auto;
 }
 /* ===================================================== */
+
+/* =========================================================
+   FORCE FULL DESKTOP WIDTH – FINAL FIX
+   ========================================================= */
+
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Force every main container to expand on desktop */
+@media (min-width: 768px) {
+  body,
+  #root,
+  #app,
+  .app,
+  .wrapper,
+  .container,
+  .page,
+  .page-content,
+  main,
+  .content,
+  .main-content,
+  header,
+  footer,
+  section {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Centered readable content area (not too wide) */
+  .container,
+  .wrapper,
+  .page-content,
+  main > div,
+  .content-wrapper {
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    width: 100% !important;
+  }
+
+  /* Make sure grids become two columns */
+  .grid,
+  .cards,
+  .two-col,
+  .vision-mission,
+  .row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+  .container,
+  .wrapper,
+  .page-content {
+    max-width: 1200px !important;
+  }
+}
+/* ========================================================= */
