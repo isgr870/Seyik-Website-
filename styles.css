@@ -201,3 +201,31 @@ p {
   }
 }
 /* force rebuild Sat Nov  7 12:39:48 EAT 2026 */
+
+/* CTA button pairs – clear gap on mobile & desktop */
+a.btn + a.btn,
+.btn + .btn {
+  margin-left: 0 !important;
+  margin-top: 0.85rem !important;
+  display: inline-flex;
+}
+@media (min-width: 560px) {
+  a.btn + a.btn,
+  .btn + .btn {
+    margin-left: 0.85rem !important;
+    margin-top: 0 !important;
+  }
+}
+.btn-stack,
+.cta-actions,
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+}
+.btn-stack .btn,
+.cta-actions .btn,
+.hero-actions .btn {
+  margin: 0 !important;
+}
