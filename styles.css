@@ -41,6 +41,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Justify body copy site-wide (client request) */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.team-role,
+.eyebrow,
+.nav-cta,
+.btn,
+.stat-label,
+.footer-col p:first-child {
+  text-align: left;
+}
+
+.section-header.centered p,
+.page-hero p,
+.hero-content p,
+.centered {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   height: auto;
